@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+body{
+  background-image: url("bg.png");
+  background-color: black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+
+/* .footer p{
+font-size: 30px;
+font-weight: 800;
+color: #8ebf42;
+font-family: sans-serif;
+} */
+
+.nav{
+  border: 3px solid green;
+  list-style-type: none;
+
+  position: absolute;
+  top : 0%;
+  left: 0%;
+  right: 0%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+}
+.nav:hover{
+  border: 3px solid lightblue;
+}
+
+.nav li {float: left;}
+
+.nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  padding-left: 14px;
+  margin: 15px;
+  text-decoration: none;
+}
+
+.nav li:hover{
+  float: left;
+  background-color: blue;
+}
+
+.intro{
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  transition: 0.3s;
+  font-size: 20px;
+  border: blue;
+}
+/* font-family: 'Modak', cursive; */
+.intro p{
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color : blue;
+    animation: mymove 5s infinite;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-out;
+    animation-direction: alternate;
+    position: relative;
+    top : 50%;
+    bottom: 80%;
+}
+#hek{
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  color : red;
+  animation: mymve 5s infinite;
+  animation-timing-function:ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+  top : 50%;
+  bottom: 80%;
+}
+
+.about{
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color: #fffdd0;
+  background-color: black;
+  opacity: 0.9;
+  color: blue;
+  border-style: solid;
+  border-color : red;
+  border-radius: 20px;
+  animation: about 5s infinite;
+  animation-direction: alternate;
+}
+.about:hover{
+  /* background: #fffdd0; */
+  animation: border 5s infinite;
+  transform: scale(1.0, 1.0);
+  border : 5px solid blue;
+  border-radius: 1px;
+  animation-direction: alternate;
+
+}
+
+@keyframes border {
+  0%, 10% {border-color: red; color:red ; border-radius: 15px}
+  50%,60% {border-color: gold;color:gold;  border-radius: 9px}
+}
+@keyframes about {
+
+    0%, 25%   {color:red ; border-radius: 20px; border-color : red;}
+    50%  {color:silver;  border-radius: 9px; border-color : silver;}
+    75%, 100%  {color:gold;  border-radius: 9px; border-color : gold;}
+}
+
+@keyframes mymove {
+
+    0%{color:blue;}
+    50%  {color:yellow;}
+    100%  {color:red;}
+}
+
+@keyframes mymve {
+  0%{color:red;}
+  50%  {color:yellow;}
+  100%  {color:blue;}
+}
+
+}
+.about h2{
+  font-family: Brush Script MT;
+}
+
+footer {
+    font-family: 'Roboto Thin';
+    text-align: center;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    color: #ff7a7a;
+}
